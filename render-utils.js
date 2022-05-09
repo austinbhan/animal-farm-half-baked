@@ -14,6 +14,12 @@ export function renderListItem(animal) {
     const span = document.createElement('span');
     span.textContent = animal.says;
 
-    div.append(img, nameSpan, span);
+    const a = document.createElement('a');
+    a.href = `./animal-detail/?id=${animal.id}`; 
+
+    a.append(img, nameSpan, span);
+    div.append(a);
     return div;
 }
+
+// Make the Test Function Correctly??
