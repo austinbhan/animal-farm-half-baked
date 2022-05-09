@@ -1,5 +1,8 @@
 import { findById } from '../utils.js';
 import { animals } from '../data.js';
+
+import { renderListItem } from '../render-utils.js'; // Will this work?
+
 console.log('hello from animal detail');
 
 const params = new URLSearchParams(window.location.search);
