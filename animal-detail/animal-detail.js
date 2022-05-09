@@ -19,5 +19,6 @@ animalImage.src = `../assets/${animal.type}.svg`;
 
 const animalSpan = document.createElement('span');
 animalSpan.classList.add('font-size');
+
 animalSpan.textContent = animal.says;
 animalName.append(animalImage, animalSpan);
