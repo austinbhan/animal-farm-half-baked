@@ -13,7 +13,6 @@ const animalName = document.getElementById('animal-name');
 animalName.textContent = animal.name;
 
 const animalImage = document.createElement('img');
-animalImage.classList.add('animal-pic');
 animalImage.src = `../assets/${animal.type}.svg`;
 
 const animalSpan = document.createElement('span');
